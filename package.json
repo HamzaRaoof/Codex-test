@@ -1,0 +1,20 @@
+{
+  "name": "land-token-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "hardhat compile",
+    "deploy:local": "hardhat run scripts/deploy-local.js --network localhost",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "example:flow": "hardhat run scripts/example-flow.js --network localhost",
+    "test": "hardhat test",
+    "lint": "echo \"no lint configured\""
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.22.10"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}
